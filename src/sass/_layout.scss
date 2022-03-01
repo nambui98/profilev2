@@ -1,0 +1,54 @@
+.ellipse-wrapper{
+    width:100%;
+    height: 100%;
+    overflow: hidden;         /* hide overflowing bits of circle */
+//   min-height: 300px;
+    position: absolute;
+}
+.ellipse-medium{
+    background-image: linear-gradient(146.05deg, #F1CAD8 13.89%, rgba(253, 213, 227, 0) 86.42%);
+    width: 37rem;
+    height: 37rem;
+    border-radius: 50%;
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid rgba(253, 122, 193, 0.45);
+    position: absolute;
+    top: 2.6rem;
+    left: 4rem;
+    @media only screen and (max-width: 36.25em) {
+        width: 18rem;
+        height: 18rem;
+        left: 2rem;
+        top: 5rem;
+    }
+}
+.ellipse-big{
+    background-image: linear-gradient(146.05deg, #F1CAD8 13.89%, rgba(253, 213, 227, 0) 86.42%);
+    width: 80rem;
+    height: 80rem;
+    border-radius: 50%;
+    filter: drop-shadow(1px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 1px solid rgba(253, 122, 193, 0.45);
+    position: absolute;
+    right:-20%;
+    bottom: -50%;
+    @media only screen and (max-width: 36.25em) {
+        width: 40rem;
+        height: 40rem;
+        bottom: 0%;
+    }
+}
+.main{
+    max-width: 120rem;
+    background: linear-gradient(109.41deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 254, 254, 0.15) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(50px);
+    border-radius: 50px;
+    padding:  2rem 0;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    overflow: hidden;
+    @media only screen and (max-width: 58em) {
+        margin: 2rem;
+    }
+}
