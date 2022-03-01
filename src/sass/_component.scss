@@ -105,6 +105,7 @@
         transition: all .3s;
         border-radius: 1rem;
         &__text{
+            color: #fff;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -128,21 +129,22 @@
         width: 100%;
         border-radius: 1rem;
         border: 2px solid transparent;
-        background:linear-gradient(45deg,#3C93FD,#F93857) border-box;
         transition: all .3s;
-        -webkit-mask:
-            linear-gradient(#fff 0 0) padding-box, 
-            linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-          mask-composite: exclude;
+         background:linear-gradient(45deg,#3C93FD,#F93857) border-box;
+        -webkit-mask-composite: copy;
+        
         padding: 3rem;
         @media only screen and (max-width: 52.5em) {
             padding: 2rem;
         }
     }
     .wrap-button:hover .btn{
-        background:linear-gradient(45deg,#3C93FD,#F93857) border-box;
-        -webkit-mask-composite: copy;
+       background:linear-gradient(45deg,#3C93FD,#F93857) border-box;
+        -webkit-mask:
+            linear-gradient(#fff 0 0) padding-box, 
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+          mask-composite: exclude;
         mask-composite: inherit;
     
     }
@@ -155,7 +157,7 @@
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     }
     .wrap-button:hover .wrap-button__text{
-        color:#fff;
+        color:#000;
     }
     .paragraph{
         font-size: 5rem;
